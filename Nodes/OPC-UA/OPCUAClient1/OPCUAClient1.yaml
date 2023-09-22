@@ -1,0 +1,137 @@
+Name: OPCUAClient1
+Id: g=337606061fe2e9e55502947ca7d741b0
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://localhost:59100"
+- Name: MinimumMessageSecurityMode
+  Type: BaseDataVariableType
+  DataType: MessageSecurityModeEnum
+  Value: 0
+- Name: MinimumSecurityPolicy
+  Type: BaseDataVariableType
+  DataType: SecurityPolicyEnum
+  Value: 0
+- Name: UserIdentityType
+  Type: BaseDataVariableType
+  DataType: UserIdentityTypeEnum
+  Value: 0
+- Name: ConnectionStatus
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+  Value: 0
+- Name: ServerUri
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+  Value: ""
+- Name: Events
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Type: BaseObjectType
+  Children:
+  - Name: RuntimeConfiguration1
+    Type: RuntimeConfigurationEntry
+    Children:
+    - Name: LocalDestinationNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"7dd1ada3a25b1dddf39b78a8537cbb6b","Namespace":7}
+    - Name: RemoteSourceNode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "/Objects/FeaturesDemo2/Model"
+    - Name: ContentSynchronizationMode
+      Type: BaseDataVariableType
+      DataType: ContentSynchronizationModeEnum
+      Value: 3
+    - Name: IncludeRemoteSourceNode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EventSynchronization
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+  - Name: RuntimeConfiguration2
+    Type: RuntimeConfigurationEntry
+    Children:
+    - Name: LocalDestinationNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"33ace83606a05a87d6300034850b8dfd","Namespace":7}
+    - Name: RemoteSourceNode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "/Objects/FeaturesDemo2/UI/Templates/MachineToMachine"
+    - Name: ContentSynchronizationMode
+      Type: BaseDataVariableType
+      DataType: ContentSynchronizationModeEnum
+      Value: 3
+    - Name: IncludeRemoteSourceNode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EventSynchronization
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+  - Name: RuntimeConfiguration3
+    Type: RuntimeConfigurationEntry
+    Children:
+    - Name: LocalDestinationNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"fc05645b76a9ee258cb5415ea170fbbf","Namespace":7}
+    - Name: RemoteSourceNode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "/Objects/FeaturesDemo2/Translations"
+    - Name: ContentSynchronizationMode
+      Type: BaseDataVariableType
+      DataType: ContentSynchronizationModeEnum
+      Value: 3
+    - Name: IncludeRemoteSourceNode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EventSynchronization
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+- Class: Reference
+  Target: ns=12;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=12;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=12;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=12;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=12;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=12;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=12;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=12;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=12;i=75
+  Direction: Forward
+- Name: SynchronizeNodeIdsOnStart
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
